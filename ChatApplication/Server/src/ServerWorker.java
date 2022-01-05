@@ -44,6 +44,8 @@ public class ServerWorker extends Thread {
                     break;
                 } else if ("login".equalsIgnoreCase(cmd)) {
                     handleLogin(outputStream, tokens);
+                } else if ("register".equalsIgnoreCase(cmd)){
+                    handleRegister(outputStream, tokens);
                 } else if ("msg".equalsIgnoreCase(cmd)) {
                     String[] tokensMsg = StringUtils.split(line, null, 3);
                     handleMessage(tokensMsg);
@@ -122,11 +124,15 @@ public class ServerWorker extends Thread {
     }
 
     private void handleLogin(OutputStream outputStream, String[] tokens) throws IOException {
+        Login newLogin = new Login();
+
         if (tokens.length == 3) {
             String login = tokens[1];
             String password = tokens[2];
 
-            if ((login.equals("guest") && password.equals("guest")) || (login.equals("jim") && password.equals("jim")) ) {
+            int result = newLogin.loginAttempt(login, password);
+
+            if (result == 1) {
                 String msg = "ok login\n";
                 outputStream.write(msg.getBytes());
                 this.login = login;
@@ -151,10 +157,31 @@ public class ServerWorker extends Thread {
                         worker.send(onlineMsg);
                     }
                 }
-            } else {
+            } else if (result == 2) {
                 String msg = "error login\n";
                 outputStream.write(msg.getBytes());
-                System.err.println("Login failed for " + login);
+                System.err.println("Login failed for " + login + ". Wrong username/password.");
+            }
+        }
+    }
+
+    private void handleRegister(OutputStream outputStream, String[] tokens) throws IOException {
+        Register register = new Register();
+
+        if (tokens.length == 3) {
+            String login = tokens[1];
+            String password = tokens[2];
+
+            int result = register.registerAttempt(login, password);
+
+            if (result == 2){
+                String msg = "ok register\n";
+                outputStream.write(msg.getBytes());
+            }
+            else if (result == 1){
+                String msg = "error register\n";
+                outputStream.write(msg.getBytes());
+                //System.err.println("Register failed for " + login + ". Username already in use");
             }
         }
     }

@@ -21,7 +21,7 @@ public class ChatClient {
     }
 
     public static void main(String[] args) throws IOException {
-        ChatClient client = new ChatClient("localhost", 8818);
+        ChatClient client = new ChatClient("localhost", 8817);
         client.addUserStatusListener(new UserStatusListener() {
             @Override
             public void online(String login) {
@@ -46,7 +46,7 @@ public class ChatClient {
         } else {
             System.out.println("Connect successful");
 
-            if (client.login("guest", "guest")) {
+            if (client.login("guest", "guest") == 1) {
                 System.out.println("Login successful");
 
                 client.msg("jim", "Hello World!");
@@ -63,19 +63,35 @@ public class ChatClient {
         serverOut.write(cmd.getBytes());
     }
 
-    public boolean login(String login, String password) throws IOException {
+    public int login(String login, String password) throws IOException {
         String cmd = "login " + login + " " + password + "\n";
         serverOut.write(cmd.getBytes());
 
         String response = bufferedIn.readLine();
-        System.out.println("Response Line:" + response);
+        System.out.println("Response Line: " + response);
 
         if ("ok login".equalsIgnoreCase(response)) {
             startMessageReader();
-            return true;
+            return 1;
         } else {
-            return false;
+            return 2;
         }
+    }
+
+    public int register(String username, String password) throws IOException {
+        String cmd = "register " + username + " " + password + "\n";
+        serverOut.write(cmd.getBytes());
+
+        String response = bufferedIn.readLine();
+        System.out.println("Response Line: " + response);
+
+        if ("ok register".equalsIgnoreCase(response))
+        {
+            System.out.println("New user registered");
+            return 1;
+        }
+
+        return 2;
     }
 
     public void logoff() throws IOException {

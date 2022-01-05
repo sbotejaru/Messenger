@@ -9,22 +9,26 @@ public class LoginWindow extends JFrame {
     JTextField loginField = new JTextField();
     JPasswordField passwordField = new JPasswordField();
     JButton loginButton = new JButton("Login");
+    JButton registerButton = new JButton("Register");
 
     public LoginWindow() {
         super("Login");
         this.setSize(200,200);
 
-        this.client = new ChatClient("localhost", 8818);
+        this.client = new ChatClient("localhost", 8817);
         client.connect();
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel p = new JPanel();
+
         p.setLayout(new BoxLayout(p, BoxLayout.Y_AXIS));
+        p.setSize(300, 300);
         p.add(loginField);
         p.add(passwordField);
         p.add(loginButton);
-        // p.setSize(300, 300);
+        p.add(registerButton);
+        p.setSize(300, 300);
 
         loginButton.addActionListener(new ActionListener() {
             @Override
@@ -33,9 +37,17 @@ public class LoginWindow extends JFrame {
             }
         });
 
-        getContentPane().add(p, BorderLayout.CENTER);
+        registerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                doRegister();
+            }
+        });
+
+        getContentPane().add(p);
 
         pack();
+
 
         setVisible(true);
     }
@@ -45,7 +57,8 @@ public class LoginWindow extends JFrame {
         String password = passwordField.getText();
 
         try {
-            if (client.login(login, password)) {
+            int result = client.login(login, password);
+            if (result == 1) {
                 // bring up the user list window
                 UserListPane userListPane = new UserListPane(client);
                 JFrame frame = new JFrame("Hello, " + login + "!");
@@ -56,9 +69,27 @@ public class LoginWindow extends JFrame {
                 frame.setVisible(true);
 
                 setVisible(false);
-            } else {
+            } else if (result == 2){
                 // show error message
-                JOptionPane.showMessageDialog(this, "Invalid login/password.");
+                JOptionPane.showMessageDialog(this, "Invalid username/password.");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void doRegister()
+    {
+        String login = loginField.getText();
+        String password = passwordField.getText();
+
+        try {
+            int result = client.register(login, password);
+            if (result == 1) {
+                JOptionPane.showMessageDialog(this, "Registered succesfully.");
+            } else if (result == 2){
+                // show error message
+                JOptionPane.showMessageDialog(this, "Username already in use.");
             }
         } catch (IOException e) {
             e.printStackTrace();
