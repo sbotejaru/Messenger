@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d3082340-0df0-4187-944b-4e0a876dd4d8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatClient/ChatClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatClient/ChatClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/ChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/LoginWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/LoginWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/MessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/MessageListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/MessagePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/MessagePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/UserListPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/UserListPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/UserStatusListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatClient/src/com/muc/UserStatusListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatServer/ChatServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatServer/ChatServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatServer/src/com/muc/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatServer/src/com/muc/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatServer/src/com/muc/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatServer/src/com/muc/ServerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatServer/src/com/muc/ServerWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatServer/src/com/muc/ServerWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/ChatServer/src/com/muc/protocols.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/ChatServer/src/com/muc/protocols.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/MultiUserChat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/MultiUserChat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/ChatClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/ChatClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/ChatClient$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/ChatClient$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/ChatClient$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/ChatClient$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/ChatClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/ChatClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/LoginWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/LoginWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/LoginWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/LoginWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/MessagePane$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/MessagePane$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/MessagePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/MessagePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/UserListPane$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/UserListPane$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/UserListPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatClient/com/muc/UserListPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatServer/com/muc/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatServer/com/muc/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatServer/com/muc/ServerMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatServer/com/muc/ServerMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatServer/com/muc/ServerWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatServer/com/muc/ServerWorker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatApplication/out/production/ChatServer/com/muc/protocols.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatApplication/out/production/ChatServer/com/muc/protocols.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chatt/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chatt/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/chatt/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/chatt/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/chatt/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/chatt/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/chatt/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/chatt/hello-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="23HnvwQOxV2ngKC6oq8Dl5o8laC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3082340-0df0-4187-944b-4e0a876dd4d8" name="Changes" comment="" />
+      <created>1641400116994</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641400116994</updated>
+    </task>
+    <servers />
+  </component>
+</project>
