@@ -1,5 +1,5 @@
 
-Multi user messenger made in Java and JavaFX
+Multi user messenger made in Java and JavaFX, using PostgreSQL for user database.
 
 Screenshots:
 
